@@ -1,0 +1,16 @@
+<service>
+    <id>smartctl_exporter</id>
+    <name>smartctl_exporter (powered by WinSW)</name>
+    <description>Export smartctl statistics to prometheus</description>
+    
+    <workingdirectory>%BASE%\bin</workingdirectory>
+    
+    <executable>%BASE%\bin\smartctl_exporter.exe</executable>
+    <startarguments>--smartctl.path="C:\Program Files\smartmontools\bin\smartctl.exe" --smartctl.device=/dev/sda --smartctl.device=/dev/sdb</startarguments>
+    
+    <logpath>%BASE%\WinSW\logs</logpath>
+    <log mode="roll-by-time">
+        <pattern>yyyyMMdd</pattern>
+        <keepFiles>8</keepFiles>
+    </log>
+</service>

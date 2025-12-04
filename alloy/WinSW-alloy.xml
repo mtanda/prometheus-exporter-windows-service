@@ -1,0 +1,16 @@
+<service>
+    <id>alloy</id>
+    <name>alloy (powered by WinSW)</name>
+    <description>OpenTelemetry Collector distribution with programmable pipelines</description>
+    
+    <workingdirectory>%BASE%\bin</workingdirectory>
+    
+    <executable>%BASE%\bin\alloy-windows-amd64.exe</executable>
+    <startarguments>run %BASE%\config.alloy</startarguments>
+    
+    <logpath>%BASE%\WinSW\logs</logpath>
+    <log mode="roll-by-time">
+        <pattern>yyyyMMdd</pattern>
+        <keepFiles>8</keepFiles>
+    </log>
+</service>

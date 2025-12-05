@@ -169,3 +169,4 @@ Service logs are typically stored in the respective service directories under `W
 - [Grafana Alloy](https://github.com/grafana/alloy)
 - [smartctl_exporter](https://github.com/prometheus-community/smartctl_exporter)
 - [smartmontools](https://www.smartmontools.org/)
+- [Windows Exporter Dashboard](https://grafana.com/grafana/dashboards/14694-windows-exporter-dashboard/) - Grafana dashboard for Windows monitoring
